@@ -32,7 +32,7 @@ public class MainBusiness {
             Statement statement = null;
             try {
                 statement = connection.createStatement();
-                String sql = "Select Emp_Id, Emp_No, Emp_Name from Employee";
+                String sql = "SELECT * FROM CountryRegionCurrency";
                 
                 
                 return list;
