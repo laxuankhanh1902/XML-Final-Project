@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="XMLFinalProjectPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entity.SalesTaxRate</class>
+    <class>entity.VPersonDemographics</class>
+    <class>entity.SalesTerritoryHistory</class>
+    <class>entity.Store</class>
+    <class>entity.VStoreWithDemographics</class>
+    <class>entity.PersonCreditCard</class>
+    <class>entity.VIndividualCustomer</class>
+    <class>entity.SalesTerritory</class>
+    <class>entity.Customer</class>
+    <class>entity.SalesOrderHeaderSalesReason</class>
+    <class>entity.VSalesPerson</class>
+    <class>entity.Currency</class>
+    <class>entity.CurrencyRate</class>
+    <class>entity.SalesPerson</class>
+    <class>entity.ShoppingCartItem</class>
+    <class>entity.CountryRegionCurrency</class>
+    <class>entity.SalesReason</class>
+    <class>entity.SalesPersonQuotaHistory</class>
+    <class>entity.VSalesPersonSalesByFiscalYears</class>
+    <class>entity.SalesOrderDetail</class>
+    <class>entity.SalesOrderHeader</class>
+    <class>entity.CreditCard</class>
+    <class>entity.VStoreWithContacts</class>
+    <class>entity.VStoreWithAddresses</class>
+    <class>entity.SpecialOffer</class>
+    <class>entity.SpecialOfferProduct</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=AdventureWorks2012"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+    </properties>
+  </persistence-unit>
+</persistence>
