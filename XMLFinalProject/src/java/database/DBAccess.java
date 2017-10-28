@@ -48,7 +48,7 @@ import java.util.logging.Logger;
  *
  * @author frankLX
  */
-public class SQLConnection {
+public class DBAccess {
 
     public static Connection getSQLServerConnection()
             throws SQLException, ClassNotFoundException {
@@ -79,7 +79,7 @@ public class SQLConnection {
 
     private List<Object> getCountryRegionCurrencyList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -119,7 +119,7 @@ public class SQLConnection {
 
     private List<Object> getCreditCardList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -160,7 +160,7 @@ public class SQLConnection {
 
     private List<Object> getCurrencyList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -197,7 +197,7 @@ public class SQLConnection {
 
     private List<Object> getCurrencyRateList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -237,7 +237,7 @@ public class SQLConnection {
 
     private List<Object> getCustomerList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -276,7 +276,7 @@ public class SQLConnection {
 
     private List<Object> getPersonCreditCardList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -315,7 +315,7 @@ public class SQLConnection {
 
     private List<Object> getSalesOrderDetailList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -360,7 +360,7 @@ public class SQLConnection {
 
     private List<Object> getSalesOrderHeaderList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -413,7 +413,7 @@ public class SQLConnection {
 
     private List<Object> getSalesOrderHeaderSalesReasonList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -451,7 +451,7 @@ public class SQLConnection {
 
     private List<Object> getSalesPerson() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -491,7 +491,7 @@ public class SQLConnection {
 
     private List<Object> getSalesPersonQuotaHistory() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -532,7 +532,7 @@ public class SQLConnection {
 
     private List<Object> getSalesReasonList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -570,7 +570,7 @@ public class SQLConnection {
 
     private List<Object> getSalesTaxRate() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -612,7 +612,7 @@ public class SQLConnection {
 
     private List<Object> getSalesTerritoryList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -658,7 +658,7 @@ public class SQLConnection {
 
     private List<Object> getSalesTerritoryHistoryList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -699,7 +699,7 @@ public class SQLConnection {
 
     private List<Object> getShoppingCartItemList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -740,7 +740,7 @@ public class SQLConnection {
 
     private List<Object> getSpecialOfferList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -786,7 +786,7 @@ public class SQLConnection {
 
     private List<Object> getSpecialOfferProductList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 
@@ -826,7 +826,7 @@ public class SQLConnection {
 
     private List<Object> getStoreList() {
         try {
-            Connection connection = SQLConnection.getSQLServerConnection();
+            Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
             Statement statement = null;
 

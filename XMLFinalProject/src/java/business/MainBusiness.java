@@ -5,7 +5,7 @@
  */
 package business;
 
-import database.SQLConnection;
+import database.DBAccess;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
