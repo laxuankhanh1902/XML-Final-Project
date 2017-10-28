@@ -25,29 +25,6 @@ public class MainBusiness {
       
     }
     
-    private List<Object> countryRegionCurrencyList(){
-        try {
-            connection = SQLConnection.getSQLServerConnection();
-            List<Object> list = new ArrayList<Object>();
-            Statement statement = null;
-            try {
-                statement = connection.createStatement();
-                String sql = "SELECT * FROM CountryRegionCurrency";
-                
-                
-                return list;
-            } catch (SQLException ex) {
-                Logger.getLogger(MainBusiness.class.getName()).log(Level.SEVERE, null, ex);
-            } finally {
-                connection.close();
-            }
-            return list;
-        } catch (SQLException ex) {
-            Logger.getLogger(MainBusiness.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(MainBusiness.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return null;
-    }
+    
     
 }
