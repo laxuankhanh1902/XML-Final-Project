@@ -26,79 +26,79 @@ public class MainBusiness {
         db = new DBAccess();
     }
 
-    private List<Object> getCountryRegionCurrencyList() {
+    public List<Object> getCountryRegionCurrencyList() {
         return db.getCountryRegionCurrencyList();
     }
 
-    private List<Object> getCreditCardList() {
+    public List<Object> getCreditCardList() {
         return db.getCreditCardList();
     }
 
-    private List<Object> getCurrencyList() {
+    public List<Object> getCurrencyList() {
         return db.getCurrencyList();
     }
 
-    private List<Object> getCurrencyRateList() {
+    public List<Object> getCurrencyRateList() {
         return db.getCurrencyRateList();
     }
 
-    private List<Object> getCustomerList() {
+    public List<Object> getCustomerList() {
         return db.getCustomerList();
     }
 
-    private List<Object> getPersonCreditCardList() {
+    public List<Object> getPersonCreditCardList() {
         return db.getPersonCreditCardList();
     }
 
-    private List<Object> getSalesOrderDetailList() {
+    public List<Object> getSalesOrderDetailList() {
         return db.getSalesOrderDetailList();
     }
 
-    private List<Object> getSalesOrderHeaderList() {
+    public List<Object> getSalesOrderHeaderList() {
         return db.getSalesOrderHeaderList();
     }
 
-    private List<Object> getSalesOrderHeaderSalesReasonList() {
+    public List<Object> getSalesOrderHeaderSalesReasonList() {
         return db.getSalesOrderHeaderSalesReasonList();
     }
 
-    private List<Object> getSalesPerson() {
+    public List<Object> getSalesPerson() {
         return db.getSalesPerson();
     }
 
-    private List<Object> getSalesPersonQuotaHistory() {
+    public List<Object> getSalesPersonQuotaHistory() {
         return db.getSalesPersonQuotaHistory();
     }
 
-    private List<Object> getSalesReasonList() {
+    public List<Object> getSalesReasonList() {
         return db.getSalesReasonList();
     }
 
-    private List<Object> getSalesTaxRate() {
+    public List<Object> getSalesTaxRate() {
         return db.getSalesTaxRate();
     }
 
-    private List<Object> getSalesTerritoryList() {
+    public List<Object> getSalesTerritoryList() {
         return db.getSalesTerritoryList();
     }
 
-    private List<Object> getSalesTerritoryHistoryList() {
+    public List<Object> getSalesTerritoryHistoryList() {
         return db.getSalesTerritoryHistoryList();
     }
 
-    private List<Object> getShoppingCartItemList() {
+    public List<Object> getShoppingCartItemList() {
         return db.getShoppingCartItemList();
     }
 
-    private List<Object> getSpecialOfferList() {
+    public List<Object> getSpecialOfferList() {
         return db.getSpecialOfferList();
     }
 
-    private List<Object> getSpecialOfferProductList() {
+    public List<Object> getSpecialOfferProductList() {
         return db.getSpecialOfferProductList();
     }
 
-    private List<Object> getStoreList() {
+    public List<Object> getStoreList() {
         return db.getStoreList();
     }
 

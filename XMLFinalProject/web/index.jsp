@@ -4,6 +4,7 @@
     Author     : frankLX
 --%>
 
+<%@page import="main.ExportToXMLFiles"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,6 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <% ExportToXMLFiles.run(); %>
         <h1>Hello World!</h1>
     </body>
 </html>

@@ -390,12 +390,14 @@ public class DBAccess {
                     BigDecimal totalDue = rs.getBigDecimal(23);
                     String rowguid = rs.getString(25);
                     Date modifiedDate = rs.getDate(26);
+                    
                     SalesOrderHeader soh = new SalesOrderHeader(
                             salesOrderID, revisionNumber, orderDate, dueDate,
                             status, onlineOrderFlag, salesOrderNumber,
                             billToAddressID, shipToAddressID, shipMethodID,
                             subTotal, taxAmt, freight, totalDue,
                             rowguid, modifiedDate);
+                    
                     list.add(soh);
                 }
 
@@ -430,10 +432,12 @@ public class DBAccess {
                     int salesOrderID = rs.getInt(1);
                     int salesReasonID = rs.getInt(2);
                     Date modifiedDate = rs.getDate(3);
+                    
                     SalesOrderHeaderSalesReason sohsr
                             = new SalesOrderHeaderSalesReason(
                                     new SalesOrderHeaderSalesReasonPK(salesOrderID,
                                             salesReasonID), modifiedDate);
+                    
                     list.add(sohsr);
                 }
 
@@ -472,8 +476,10 @@ public class DBAccess {
                     BigDecimal salesLastYear = rs.getBigDecimal(7);
                     String rowguid = rs.getString(8);
                     Date modifiedDate = rs.getDate(9);
+                    
                     SalesPerson sp = new SalesPerson(businessEntityID, bonus,
                             commissionPct, salesYTD, salesLastYear, rowguid, modifiedDate);
+                    
                     list.add(sp);
                 }
 
