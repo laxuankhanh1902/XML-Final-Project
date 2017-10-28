@@ -19,6 +19,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -85,6 +86,7 @@ public class CreditCard implements Serializable {
         return creditCardID;
     }
 
+    @XmlAttribute
     public void setCreditCardID(Integer creditCardID) {
         this.creditCardID = creditCardID;
     }
@@ -93,6 +95,7 @@ public class CreditCard implements Serializable {
         return cardType;
     }
 
+    @XmlAttribute
     public void setCardType(String cardType) {
         this.cardType = cardType;
     }
@@ -101,6 +104,7 @@ public class CreditCard implements Serializable {
         return cardNumber;
     }
 
+    @XmlAttribute
     public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
     }
@@ -109,6 +113,7 @@ public class CreditCard implements Serializable {
         return expMonth;
     }
 
+    @XmlAttribute
     public void setExpMonth(short expMonth) {
         this.expMonth = expMonth;
     }
@@ -117,6 +122,7 @@ public class CreditCard implements Serializable {
         return expYear;
     }
 
+    @XmlAttribute
     public void setExpYear(short expYear) {
         this.expYear = expYear;
     }
@@ -125,6 +131,7 @@ public class CreditCard implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -171,5 +178,5 @@ public class CreditCard implements Serializable {
     public String toString() {
         return "entity.CreditCard[ creditCardID=" + creditCardID + " ]";
     }
-    
+
 }

@@ -9,6 +9,7 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.xml.bind.annotation.XmlAttribute;
 
 /**
  *
@@ -36,6 +37,7 @@ public class PersonCreditCardPK implements Serializable {
         return businessEntityID;
     }
 
+    @XmlAttribute
     public void setBusinessEntityID(int businessEntityID) {
         this.businessEntityID = businessEntityID;
     }
@@ -44,6 +46,7 @@ public class PersonCreditCardPK implements Serializable {
         return creditCardID;
     }
 
+    @XmlAttribute
     public void setCreditCardID(int creditCardID) {
         this.creditCardID = creditCardID;
     }
@@ -76,5 +79,5 @@ public class PersonCreditCardPK implements Serializable {
     public String toString() {
         return "entity.PersonCreditCardPK[ businessEntityID=" + businessEntityID + ", creditCardID=" + creditCardID + " ]";
     }
-    
+
 }

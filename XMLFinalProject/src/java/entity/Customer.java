@@ -21,6 +21,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -84,6 +85,7 @@ public class Customer implements Serializable {
         return customerID;
     }
 
+    @XmlAttribute
     public void setCustomerID(Integer customerID) {
         this.customerID = customerID;
     }
@@ -92,6 +94,7 @@ public class Customer implements Serializable {
         return personID;
     }
 
+    @XmlAttribute
     public void setPersonID(Integer personID) {
         this.personID = personID;
     }
@@ -100,6 +103,7 @@ public class Customer implements Serializable {
         return accountNumber;
     }
 
+    @XmlAttribute
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
@@ -108,6 +112,7 @@ public class Customer implements Serializable {
         return rowguid;
     }
 
+    @XmlAttribute
     public void setRowguid(String rowguid) {
         this.rowguid = rowguid;
     }
@@ -116,6 +121,7 @@ public class Customer implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -169,5 +175,5 @@ public class Customer implements Serializable {
     public String toString() {
         return "entity.Customer[ customerID=" + customerID + " ]";
     }
-    
+
 }

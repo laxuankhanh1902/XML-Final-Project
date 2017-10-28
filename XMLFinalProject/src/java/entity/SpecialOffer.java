@@ -20,6 +20,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -109,7 +110,7 @@ public class SpecialOffer implements Serializable {
     public Integer getSpecialOfferID() {
         return specialOfferID;
     }
-
+    @XmlAttribute
     public void setSpecialOfferID(Integer specialOfferID) {
         this.specialOfferID = specialOfferID;
     }
@@ -117,7 +118,7 @@ public class SpecialOffer implements Serializable {
     public String getDescription() {
         return description;
     }
-
+    @XmlAttribute
     public void setDescription(String description) {
         this.description = description;
     }
@@ -125,7 +126,7 @@ public class SpecialOffer implements Serializable {
     public BigDecimal getDiscountPct() {
         return discountPct;
     }
-
+    @XmlAttribute
     public void setDiscountPct(BigDecimal discountPct) {
         this.discountPct = discountPct;
     }
@@ -133,7 +134,7 @@ public class SpecialOffer implements Serializable {
     public String getType() {
         return type;
     }
-
+    @XmlAttribute
     public void setType(String type) {
         this.type = type;
     }
@@ -141,7 +142,7 @@ public class SpecialOffer implements Serializable {
     public String getCategory() {
         return category;
     }
-
+    @XmlAttribute
     public void setCategory(String category) {
         this.category = category;
     }
@@ -149,7 +150,7 @@ public class SpecialOffer implements Serializable {
     public Date getStartDate() {
         return startDate;
     }
-
+    @XmlAttribute
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
@@ -157,7 +158,7 @@ public class SpecialOffer implements Serializable {
     public Date getEndDate() {
         return endDate;
     }
-
+    @XmlAttribute
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
@@ -165,7 +166,7 @@ public class SpecialOffer implements Serializable {
     public int getMinQty() {
         return minQty;
     }
-
+    @XmlAttribute
     public void setMinQty(int minQty) {
         this.minQty = minQty;
     }
@@ -173,7 +174,7 @@ public class SpecialOffer implements Serializable {
     public Integer getMaxQty() {
         return maxQty;
     }
-
+    @XmlAttribute
     public void setMaxQty(Integer maxQty) {
         this.maxQty = maxQty;
     }
@@ -181,7 +182,7 @@ public class SpecialOffer implements Serializable {
     public String getRowguid() {
         return rowguid;
     }
-
+    @XmlAttribute
     public void setRowguid(String rowguid) {
         this.rowguid = rowguid;
     }
@@ -189,7 +190,7 @@ public class SpecialOffer implements Serializable {
     public Date getModifiedDate() {
         return modifiedDate;
     }
-
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }

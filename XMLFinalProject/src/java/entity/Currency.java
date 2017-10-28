@@ -19,6 +19,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -72,6 +73,7 @@ public class Currency implements Serializable {
         return currencyCode;
     }
 
+    @XmlAttribute
     public void setCurrencyCode(String currencyCode) {
         this.currencyCode = currencyCode;
     }
@@ -80,6 +82,7 @@ public class Currency implements Serializable {
         return name;
     }
 
+    @XmlAttribute
     public void setName(String name) {
         this.name = name;
     }
@@ -88,6 +91,7 @@ public class Currency implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -143,5 +147,5 @@ public class Currency implements Serializable {
     public String toString() {
         return "entity.Currency[ currencyCode=" + currencyCode + " ]";
     }
-    
+
 }

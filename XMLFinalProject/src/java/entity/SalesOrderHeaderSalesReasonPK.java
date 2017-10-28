@@ -9,6 +9,7 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.xml.bind.annotation.XmlAttribute;
 
 /**
  *
@@ -36,6 +37,7 @@ public class SalesOrderHeaderSalesReasonPK implements Serializable {
         return salesOrderID;
     }
 
+    @XmlAttribute
     public void setSalesOrderID(int salesOrderID) {
         this.salesOrderID = salesOrderID;
     }
@@ -44,6 +46,7 @@ public class SalesOrderHeaderSalesReasonPK implements Serializable {
         return salesReasonID;
     }
 
+    @XmlAttribute
     public void setSalesReasonID(int salesReasonID) {
         this.salesReasonID = salesReasonID;
     }
@@ -76,5 +79,5 @@ public class SalesOrderHeaderSalesReasonPK implements Serializable {
     public String toString() {
         return "entity.SalesOrderHeaderSalesReasonPK[ salesOrderID=" + salesOrderID + ", salesReasonID=" + salesReasonID + " ]";
     }
-    
+
 }

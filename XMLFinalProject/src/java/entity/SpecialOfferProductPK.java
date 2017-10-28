@@ -9,6 +9,7 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.xml.bind.annotation.XmlAttribute;
 
 /**
  *
@@ -35,7 +36,7 @@ public class SpecialOfferProductPK implements Serializable {
     public int getSpecialOfferID() {
         return specialOfferID;
     }
-
+    @XmlAttribute
     public void setSpecialOfferID(int specialOfferID) {
         this.specialOfferID = specialOfferID;
     }
@@ -43,7 +44,7 @@ public class SpecialOfferProductPK implements Serializable {
     public int getProductID() {
         return productID;
     }
-
+    @XmlAttribute
     public void setProductID(int productID) {
         this.productID = productID;
     }

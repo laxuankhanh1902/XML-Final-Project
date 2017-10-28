@@ -20,6 +20,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -111,6 +112,7 @@ public class SalesTerritory implements Serializable {
         return territoryID;
     }
 
+    @XmlAttribute
     public void setTerritoryID(Integer territoryID) {
         this.territoryID = territoryID;
     }
@@ -119,6 +121,7 @@ public class SalesTerritory implements Serializable {
         return name;
     }
 
+    @XmlAttribute
     public void setName(String name) {
         this.name = name;
     }
@@ -127,6 +130,7 @@ public class SalesTerritory implements Serializable {
         return countryRegionCode;
     }
 
+    @XmlAttribute
     public void setCountryRegionCode(String countryRegionCode) {
         this.countryRegionCode = countryRegionCode;
     }
@@ -135,6 +139,7 @@ public class SalesTerritory implements Serializable {
         return group;
     }
 
+    @XmlAttribute
     public void setGroup(String group) {
         this.group = group;
     }
@@ -143,6 +148,7 @@ public class SalesTerritory implements Serializable {
         return salesYTD;
     }
 
+    @XmlAttribute
     public void setSalesYTD(BigDecimal salesYTD) {
         this.salesYTD = salesYTD;
     }
@@ -151,6 +157,7 @@ public class SalesTerritory implements Serializable {
         return salesLastYear;
     }
 
+    @XmlAttribute
     public void setSalesLastYear(BigDecimal salesLastYear) {
         this.salesLastYear = salesLastYear;
     }
@@ -159,6 +166,7 @@ public class SalesTerritory implements Serializable {
         return costYTD;
     }
 
+    @XmlAttribute
     public void setCostYTD(BigDecimal costYTD) {
         this.costYTD = costYTD;
     }
@@ -167,6 +175,7 @@ public class SalesTerritory implements Serializable {
         return costLastYear;
     }
 
+    @XmlAttribute
     public void setCostLastYear(BigDecimal costLastYear) {
         this.costLastYear = costLastYear;
     }
@@ -175,6 +184,7 @@ public class SalesTerritory implements Serializable {
         return rowguid;
     }
 
+    @XmlAttribute
     public void setRowguid(String rowguid) {
         this.rowguid = rowguid;
     }
@@ -183,6 +193,7 @@ public class SalesTerritory implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -247,5 +258,5 @@ public class SalesTerritory implements Serializable {
     public String toString() {
         return "entity.SalesTerritory[ territoryID=" + territoryID + " ]";
     }
-    
+
 }

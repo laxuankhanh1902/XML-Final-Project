@@ -20,6 +20,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -109,6 +110,7 @@ public class SalesOrderDetail implements Serializable {
         return carrierTrackingNumber;
     }
 
+    @XmlAttribute
     public void setCarrierTrackingNumber(String carrierTrackingNumber) {
         this.carrierTrackingNumber = carrierTrackingNumber;
     }
@@ -117,6 +119,7 @@ public class SalesOrderDetail implements Serializable {
         return orderQty;
     }
 
+    @XmlAttribute
     public void setOrderQty(short orderQty) {
         this.orderQty = orderQty;
     }
@@ -125,6 +128,7 @@ public class SalesOrderDetail implements Serializable {
         return unitPrice;
     }
 
+    @XmlAttribute
     public void setUnitPrice(BigDecimal unitPrice) {
         this.unitPrice = unitPrice;
     }
@@ -133,6 +137,7 @@ public class SalesOrderDetail implements Serializable {
         return unitPriceDiscount;
     }
 
+    @XmlAttribute
     public void setUnitPriceDiscount(BigDecimal unitPriceDiscount) {
         this.unitPriceDiscount = unitPriceDiscount;
     }
@@ -141,6 +146,7 @@ public class SalesOrderDetail implements Serializable {
         return lineTotal;
     }
 
+    @XmlAttribute
     public void setLineTotal(BigDecimal lineTotal) {
         this.lineTotal = lineTotal;
     }
@@ -149,6 +155,7 @@ public class SalesOrderDetail implements Serializable {
         return rowguid;
     }
 
+    @XmlAttribute
     public void setRowguid(String rowguid) {
         this.rowguid = rowguid;
     }
@@ -157,6 +164,7 @@ public class SalesOrderDetail implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -201,5 +209,5 @@ public class SalesOrderDetail implements Serializable {
     public String toString() {
         return "entity.SalesOrderDetail[ salesOrderDetailPK=" + salesOrderDetailPK + " ]";
     }
-    
+
 }

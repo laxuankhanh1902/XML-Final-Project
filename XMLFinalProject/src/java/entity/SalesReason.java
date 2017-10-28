@@ -19,6 +19,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -73,6 +74,7 @@ public class SalesReason implements Serializable {
         return salesReasonID;
     }
 
+    @XmlAttribute
     public void setSalesReasonID(Integer salesReasonID) {
         this.salesReasonID = salesReasonID;
     }
@@ -81,6 +83,7 @@ public class SalesReason implements Serializable {
         return name;
     }
 
+    @XmlAttribute
     public void setName(String name) {
         this.name = name;
     }
@@ -89,6 +92,7 @@ public class SalesReason implements Serializable {
         return reasonType;
     }
 
+    @XmlAttribute
     public void setReasonType(String reasonType) {
         this.reasonType = reasonType;
     }
@@ -97,6 +101,7 @@ public class SalesReason implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -134,5 +139,5 @@ public class SalesReason implements Serializable {
     public String toString() {
         return "entity.SalesReason[ salesReasonID=" + salesReasonID + " ]";
     }
-    
+
 }

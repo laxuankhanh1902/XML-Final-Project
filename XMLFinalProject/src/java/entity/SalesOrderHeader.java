@@ -22,6 +22,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -172,6 +173,7 @@ public class SalesOrderHeader implements Serializable {
         return salesOrderID;
     }
 
+    @XmlAttribute
     public void setSalesOrderID(Integer salesOrderID) {
         this.salesOrderID = salesOrderID;
     }
@@ -180,6 +182,7 @@ public class SalesOrderHeader implements Serializable {
         return revisionNumber;
     }
 
+    @XmlAttribute
     public void setRevisionNumber(short revisionNumber) {
         this.revisionNumber = revisionNumber;
     }
@@ -188,6 +191,7 @@ public class SalesOrderHeader implements Serializable {
         return orderDate;
     }
 
+    @XmlAttribute
     public void setOrderDate(Date orderDate) {
         this.orderDate = orderDate;
     }
@@ -196,6 +200,7 @@ public class SalesOrderHeader implements Serializable {
         return dueDate;
     }
 
+    @XmlAttribute
     public void setDueDate(Date dueDate) {
         this.dueDate = dueDate;
     }
@@ -204,6 +209,7 @@ public class SalesOrderHeader implements Serializable {
         return shipDate;
     }
 
+    @XmlAttribute
     public void setShipDate(Date shipDate) {
         this.shipDate = shipDate;
     }
@@ -212,6 +218,7 @@ public class SalesOrderHeader implements Serializable {
         return status;
     }
 
+    @XmlAttribute
     public void setStatus(short status) {
         this.status = status;
     }
@@ -220,6 +227,7 @@ public class SalesOrderHeader implements Serializable {
         return onlineOrderFlag;
     }
 
+    @XmlAttribute
     public void setOnlineOrderFlag(boolean onlineOrderFlag) {
         this.onlineOrderFlag = onlineOrderFlag;
     }
@@ -228,6 +236,7 @@ public class SalesOrderHeader implements Serializable {
         return salesOrderNumber;
     }
 
+    @XmlAttribute
     public void setSalesOrderNumber(String salesOrderNumber) {
         this.salesOrderNumber = salesOrderNumber;
     }
@@ -236,6 +245,7 @@ public class SalesOrderHeader implements Serializable {
         return purchaseOrderNumber;
     }
 
+    @XmlAttribute
     public void setPurchaseOrderNumber(String purchaseOrderNumber) {
         this.purchaseOrderNumber = purchaseOrderNumber;
     }
@@ -244,6 +254,7 @@ public class SalesOrderHeader implements Serializable {
         return accountNumber;
     }
 
+    @XmlAttribute
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
@@ -252,6 +263,7 @@ public class SalesOrderHeader implements Serializable {
         return billToAddressID;
     }
 
+    @XmlAttribute
     public void setBillToAddressID(int billToAddressID) {
         this.billToAddressID = billToAddressID;
     }
@@ -260,6 +272,7 @@ public class SalesOrderHeader implements Serializable {
         return shipToAddressID;
     }
 
+    @XmlAttribute
     public void setShipToAddressID(int shipToAddressID) {
         this.shipToAddressID = shipToAddressID;
     }
@@ -268,6 +281,7 @@ public class SalesOrderHeader implements Serializable {
         return shipMethodID;
     }
 
+    @XmlAttribute
     public void setShipMethodID(int shipMethodID) {
         this.shipMethodID = shipMethodID;
     }
@@ -276,6 +290,7 @@ public class SalesOrderHeader implements Serializable {
         return creditCardApprovalCode;
     }
 
+    @XmlAttribute
     public void setCreditCardApprovalCode(String creditCardApprovalCode) {
         this.creditCardApprovalCode = creditCardApprovalCode;
     }
@@ -284,6 +299,7 @@ public class SalesOrderHeader implements Serializable {
         return subTotal;
     }
 
+    @XmlAttribute
     public void setSubTotal(BigDecimal subTotal) {
         this.subTotal = subTotal;
     }
@@ -292,6 +308,7 @@ public class SalesOrderHeader implements Serializable {
         return taxAmt;
     }
 
+    @XmlAttribute
     public void setTaxAmt(BigDecimal taxAmt) {
         this.taxAmt = taxAmt;
     }
@@ -300,6 +317,7 @@ public class SalesOrderHeader implements Serializable {
         return freight;
     }
 
+    @XmlAttribute
     public void setFreight(BigDecimal freight) {
         this.freight = freight;
     }
@@ -308,6 +326,7 @@ public class SalesOrderHeader implements Serializable {
         return totalDue;
     }
 
+    @XmlAttribute
     public void setTotalDue(BigDecimal totalDue) {
         this.totalDue = totalDue;
     }
@@ -316,6 +335,7 @@ public class SalesOrderHeader implements Serializable {
         return comment;
     }
 
+    @XmlAttribute
     public void setComment(String comment) {
         this.comment = comment;
     }
@@ -324,6 +344,7 @@ public class SalesOrderHeader implements Serializable {
         return rowguid;
     }
 
+    @XmlAttribute
     public void setRowguid(String rowguid) {
         this.rowguid = rowguid;
     }
@@ -332,6 +353,7 @@ public class SalesOrderHeader implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -418,5 +440,5 @@ public class SalesOrderHeader implements Serializable {
     public String toString() {
         return "entity.SalesOrderHeader[ salesOrderID=" + salesOrderID + " ]";
     }
-    
+
 }

@@ -20,11 +20,11 @@ public class ExportToXMLFiles {
         MainBusiness mb = new MainBusiness();
         System.out.println("Ready to export xml files");
         
-//        parser.marshalling(CountryRegionCurrency.class, 
-//                mb.getCountryRegionCurrencyList(), "CountryRegionCurrency.xml");
+        parser.marshalling(CountryRegionCurrency.class, 
+                mb.getCountryRegionCurrencyList(), "CountryRegionCurrency.xml");
         
-        parser.marshalling(CreditCard.class, 
-                mb.getCreditCardList(), "CreditCard.xml");
+//        parser.marshalling(CreditCard.class, 
+//                mb.getCreditCardList(), "CreditCard.xml");
 //        
 //        parser.marshalling(Currency.class, 
 //                mb.getCurrencyList(), "Currency.xml");

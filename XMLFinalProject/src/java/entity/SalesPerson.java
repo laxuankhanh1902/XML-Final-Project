@@ -22,6 +22,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -104,6 +105,7 @@ public class SalesPerson implements Serializable {
         return businessEntityID;
     }
 
+    @XmlAttribute
     public void setBusinessEntityID(Integer businessEntityID) {
         this.businessEntityID = businessEntityID;
     }
@@ -112,6 +114,7 @@ public class SalesPerson implements Serializable {
         return salesQuota;
     }
 
+    @XmlAttribute
     public void setSalesQuota(BigDecimal salesQuota) {
         this.salesQuota = salesQuota;
     }
@@ -120,6 +123,7 @@ public class SalesPerson implements Serializable {
         return bonus;
     }
 
+    @XmlAttribute
     public void setBonus(BigDecimal bonus) {
         this.bonus = bonus;
     }
@@ -128,6 +132,7 @@ public class SalesPerson implements Serializable {
         return commissionPct;
     }
 
+    @XmlAttribute
     public void setCommissionPct(BigDecimal commissionPct) {
         this.commissionPct = commissionPct;
     }
@@ -136,6 +141,7 @@ public class SalesPerson implements Serializable {
         return salesYTD;
     }
 
+    @XmlAttribute
     public void setSalesYTD(BigDecimal salesYTD) {
         this.salesYTD = salesYTD;
     }
@@ -144,6 +150,7 @@ public class SalesPerson implements Serializable {
         return salesLastYear;
     }
 
+    @XmlAttribute
     public void setSalesLastYear(BigDecimal salesLastYear) {
         this.salesLastYear = salesLastYear;
     }
@@ -152,6 +159,7 @@ public class SalesPerson implements Serializable {
         return rowguid;
     }
 
+    @XmlAttribute
     public void setRowguid(String rowguid) {
         this.rowguid = rowguid;
     }
@@ -160,6 +168,7 @@ public class SalesPerson implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -232,5 +241,5 @@ public class SalesPerson implements Serializable {
     public String toString() {
         return "entity.SalesPerson[ businessEntityID=" + businessEntityID + " ]";
     }
-    
+
 }

@@ -16,6 +16,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -77,7 +78,7 @@ public class ShoppingCartItem implements Serializable {
     public Integer getShoppingCartItemID() {
         return shoppingCartItemID;
     }
-
+    @XmlAttribute
     public void setShoppingCartItemID(Integer shoppingCartItemID) {
         this.shoppingCartItemID = shoppingCartItemID;
     }
@@ -85,7 +86,7 @@ public class ShoppingCartItem implements Serializable {
     public String getShoppingCartID() {
         return shoppingCartID;
     }
-
+    @XmlAttribute
     public void setShoppingCartID(String shoppingCartID) {
         this.shoppingCartID = shoppingCartID;
     }
@@ -93,7 +94,7 @@ public class ShoppingCartItem implements Serializable {
     public int getQuantity() {
         return quantity;
     }
-
+    @XmlAttribute
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
@@ -101,7 +102,7 @@ public class ShoppingCartItem implements Serializable {
     public int getProductID() {
         return productID;
     }
-
+    @XmlAttribute
     public void setProductID(int productID) {
         this.productID = productID;
     }
@@ -109,7 +110,7 @@ public class ShoppingCartItem implements Serializable {
     public Date getDateCreated() {
         return dateCreated;
     }
-
+    @XmlAttribute
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
     }
@@ -117,7 +118,7 @@ public class ShoppingCartItem implements Serializable {
     public Date getModifiedDate() {
         return modifiedDate;
     }
-
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }

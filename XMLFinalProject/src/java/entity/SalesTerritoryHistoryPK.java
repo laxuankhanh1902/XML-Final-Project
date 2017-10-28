@@ -12,6 +12,7 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 
 /**
  *
@@ -43,7 +44,7 @@ public class SalesTerritoryHistoryPK implements Serializable {
     public int getBusinessEntityID() {
         return businessEntityID;
     }
-
+    @XmlAttribute
     public void setBusinessEntityID(int businessEntityID) {
         this.businessEntityID = businessEntityID;
     }
@@ -51,7 +52,7 @@ public class SalesTerritoryHistoryPK implements Serializable {
     public int getTerritoryID() {
         return territoryID;
     }
-
+    @XmlAttribute
     public void setTerritoryID(int territoryID) {
         this.territoryID = territoryID;
     }
@@ -59,7 +60,7 @@ public class SalesTerritoryHistoryPK implements Serializable {
     public Date getStartDate() {
         return startDate;
     }
-
+    @XmlAttribute
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }

@@ -17,6 +17,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -84,6 +85,7 @@ public class SalesTaxRate implements Serializable {
         return salesTaxRateID;
     }
 
+    @XmlAttribute
     public void setSalesTaxRateID(Integer salesTaxRateID) {
         this.salesTaxRateID = salesTaxRateID;
     }
@@ -92,6 +94,7 @@ public class SalesTaxRate implements Serializable {
         return stateProvinceID;
     }
 
+    @XmlAttribute
     public void setStateProvinceID(int stateProvinceID) {
         this.stateProvinceID = stateProvinceID;
     }
@@ -100,6 +103,7 @@ public class SalesTaxRate implements Serializable {
         return taxType;
     }
 
+    @XmlAttribute
     public void setTaxType(short taxType) {
         this.taxType = taxType;
     }
@@ -108,6 +112,7 @@ public class SalesTaxRate implements Serializable {
         return taxRate;
     }
 
+    @XmlAttribute
     public void setTaxRate(BigDecimal taxRate) {
         this.taxRate = taxRate;
     }
@@ -116,6 +121,7 @@ public class SalesTaxRate implements Serializable {
         return name;
     }
 
+    @XmlAttribute
     public void setName(String name) {
         this.name = name;
     }
@@ -124,6 +130,7 @@ public class SalesTaxRate implements Serializable {
         return rowguid;
     }
 
+    @XmlAttribute
     public void setRowguid(String rowguid) {
         this.rowguid = rowguid;
     }
@@ -132,6 +139,7 @@ public class SalesTaxRate implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -160,5 +168,5 @@ public class SalesTaxRate implements Serializable {
     public String toString() {
         return "entity.SalesTaxRate[ salesTaxRateID=" + salesTaxRateID + " ]";
     }
-    
+
 }

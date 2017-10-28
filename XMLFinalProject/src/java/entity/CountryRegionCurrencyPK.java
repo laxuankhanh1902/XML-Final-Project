@@ -9,6 +9,7 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.xml.bind.annotation.XmlAttribute;
 
 /**
  *
@@ -35,7 +36,7 @@ public class CountryRegionCurrencyPK implements Serializable {
     public String getCountryRegionCode() {
         return countryRegionCode;
     }
-
+    @XmlAttribute
     public void setCountryRegionCode(String countryRegionCode) {
         this.countryRegionCode = countryRegionCode;
     }
@@ -43,7 +44,7 @@ public class CountryRegionCurrencyPK implements Serializable {
     public String getCurrencyCode() {
         return currencyCode;
     }
-
+    @XmlAttribute
     public void setCurrencyCode(String currencyCode) {
         this.currencyCode = currencyCode;
     }

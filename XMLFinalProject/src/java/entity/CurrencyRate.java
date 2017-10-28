@@ -21,6 +21,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -88,6 +89,7 @@ public class CurrencyRate implements Serializable {
         return currencyRateID;
     }
 
+    @XmlAttribute
     public void setCurrencyRateID(Integer currencyRateID) {
         this.currencyRateID = currencyRateID;
     }
@@ -96,6 +98,7 @@ public class CurrencyRate implements Serializable {
         return currencyRateDate;
     }
 
+    @XmlAttribute
     public void setCurrencyRateDate(Date currencyRateDate) {
         this.currencyRateDate = currencyRateDate;
     }
@@ -104,6 +107,7 @@ public class CurrencyRate implements Serializable {
         return averageRate;
     }
 
+    @XmlAttribute
     public void setAverageRate(BigDecimal averageRate) {
         this.averageRate = averageRate;
     }
@@ -112,6 +116,7 @@ public class CurrencyRate implements Serializable {
         return endOfDayRate;
     }
 
+    @XmlAttribute
     public void setEndOfDayRate(BigDecimal endOfDayRate) {
         this.endOfDayRate = endOfDayRate;
     }
@@ -120,6 +125,7 @@ public class CurrencyRate implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -173,5 +179,5 @@ public class CurrencyRate implements Serializable {
     public String toString() {
         return "entity.CurrencyRate[ currencyRateID=" + currencyRateID + " ]";
     }
-    
+
 }

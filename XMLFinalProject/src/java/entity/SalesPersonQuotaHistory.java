@@ -19,6 +19,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -85,6 +86,7 @@ public class SalesPersonQuotaHistory implements Serializable {
         return salesQuota;
     }
 
+    @XmlAttribute
     public void setSalesQuota(BigDecimal salesQuota) {
         this.salesQuota = salesQuota;
     }
@@ -93,6 +95,7 @@ public class SalesPersonQuotaHistory implements Serializable {
         return rowguid;
     }
 
+    @XmlAttribute
     public void setRowguid(String rowguid) {
         this.rowguid = rowguid;
     }
@@ -101,6 +104,7 @@ public class SalesPersonQuotaHistory implements Serializable {
         return modifiedDate;
     }
 
+    @XmlAttribute
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
     }
@@ -137,5 +141,5 @@ public class SalesPersonQuotaHistory implements Serializable {
     public String toString() {
         return "entity.SalesPersonQuotaHistory[ salesPersonQuotaHistoryPK=" + salesPersonQuotaHistoryPK + " ]";
     }
-    
+
 }

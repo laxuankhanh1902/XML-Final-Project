@@ -21,14 +21,14 @@ public class Parser {
     public Parser() {
     }
 
-    public void marshalling(Class inputClass, List<Object> list, String path) {
+    public void marshalling(Class inputClass, List<Object> list, String xmlFileName) {
 
         try {
             JAXBContext context = JAXBContext.newInstance(inputClass);
 
             Marshaller marshalling = context.createMarshaller();
             marshalling.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            marshalling.marshal(list, new File("D:\\" + path));
+            marshalling.marshal(list, new File("D:\\" + xmlFileName));
 
         } catch (JAXBException e) {
             // TODO Auto-generated catch block
@@ -36,14 +36,14 @@ public class Parser {
         }
     }
 
-    public void unMarshalling(Class inputClass, List<Object> list, String path) {
+    public void unMarshalling(Class inputClass, List<Object> list, String xmlFileName) {
 
         try {
             JAXBContext context = JAXBContext.newInstance(inputClass);
 
             Unmarshaller unmarshalling = context.createUnmarshaller();
 
-            Object object = (Object) unmarshalling.unmarshal(new File(path));
+            Object object = (Object) unmarshalling.unmarshal(new File(xmlFileName));
 
             for (Object element : list) {
                 //Do something here
