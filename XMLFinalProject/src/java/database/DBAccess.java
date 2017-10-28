@@ -50,6 +50,10 @@ import java.util.logging.Logger;
  */
 public class DBAccess {
 
+    public DBAccess() {
+    }
+
+    
     public static Connection getSQLServerConnection()
             throws SQLException, ClassNotFoundException {
         
@@ -77,7 +81,7 @@ public class DBAccess {
         return conn;
     }
 
-    private List<Object> getCountryRegionCurrencyList() {
+    public List<Object> getCountryRegionCurrencyList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -117,7 +121,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getCreditCardList() {
+    public List<Object> getCreditCardList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -158,7 +162,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getCurrencyList() {
+    public List<Object> getCurrencyList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -195,7 +199,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getCurrencyRateList() {
+    public List<Object> getCurrencyRateList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -235,7 +239,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getCustomerList() {
+    public List<Object> getCustomerList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -274,7 +278,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getPersonCreditCardList() {
+    public List<Object> getPersonCreditCardList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -313,7 +317,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesOrderDetailList() {
+    public List<Object> getSalesOrderDetailList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -358,7 +362,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesOrderHeaderList() {
+    public List<Object> getSalesOrderHeaderList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -411,7 +415,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesOrderHeaderSalesReasonList() {
+    public List<Object> getSalesOrderHeaderSalesReasonList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -449,7 +453,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesPerson() {
+    public List<Object> getSalesPerson() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -489,7 +493,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesPersonQuotaHistory() {
+    public List<Object> getSalesPersonQuotaHistory() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -530,7 +534,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesReasonList() {
+    public List<Object> getSalesReasonList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -568,7 +572,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesTaxRate() {
+    public List<Object> getSalesTaxRate() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -610,7 +614,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesTerritoryList() {
+    public List<Object> getSalesTerritoryList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -656,7 +660,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSalesTerritoryHistoryList() {
+    public List<Object> getSalesTerritoryHistoryList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -697,7 +701,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getShoppingCartItemList() {
+    public List<Object> getShoppingCartItemList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -738,7 +742,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSpecialOfferList() {
+    public List<Object> getSpecialOfferList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -784,7 +788,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getSpecialOfferProductList() {
+    public List<Object> getSpecialOfferProductList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
@@ -824,7 +828,7 @@ public class DBAccess {
         return null;
     }
 
-    private List<Object> getStoreList() {
+    public List<Object> getStoreList() {
         try {
             Connection connection = DBAccess.getSQLServerConnection();
             List<Object> list = new ArrayList<Object>();
